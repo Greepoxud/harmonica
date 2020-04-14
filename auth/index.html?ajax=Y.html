@@ -1,0 +1,45 @@
+
+<div class="bx-auth">
+	<div class="bx-auth-title">Авторизация</div>
+	<div class="bx-auth-note">Пожалуйста, авторизуйтесь:</div>
+
+	<form name="form_auth" method="post" target="_top" action="https://esttort.ru/auth/?login=yes&amp;ajax=Y">
+
+		<input type="hidden" name="AUTH_FORM" value="Y" />
+		<input type="hidden" name="TYPE" value="AUTH" />
+				<input type="hidden" name="backurl" value="/auth/?login=yes" />
+				
+
+		<div class="callback-row">
+			<label>Логин:</label>
+			<input class="bx-auth-input" type="text" name="USER_LOGIN" maxlength="255" value="" />
+		</div>
+				
+		<div class="callback-row">
+			<label>Пароль:</label>
+			<input class="bx-auth-input" type="password" name="USER_PASSWORD" maxlength="255" autocomplete="off" />
+		</div>
+
+		<div class="callback-row">
+			<input class="authFormSend" type="submit" name="Login" value="Войти" />
+		</div>
+	
+
+		<noindex>
+			<p>
+				<a href="index.html%3Fforgot_password=yes.html" rel="nofollow">Забыли свой пароль?</a>
+			</p>
+		</noindex>
+
+		<noindex>
+			<p>
+				<a href="index.html%3Fregister=yes.html" rel="nofollow">Зарегистрироваться</a><br />
+				Если вы впервые на сайте, заполните, пожалуйста, регистрационную форму.			</p>
+		</noindex>
+
+	</form>
+</div>
+
+<script type="text/javascript">
+try{document.form_auth.USER_LOGIN.focus();}catch(e){}
+</script>
